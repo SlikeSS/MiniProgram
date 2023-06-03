@@ -38,7 +38,7 @@ public class Main {
         System.out.println("Введите 0 или 1");
     }
     private static void udalit() {
-        System.out.println("Введите индекс в для его удаления");
+        System.out.println("Введите индекс в массив для его удаления");
     }
     private static void izmenit() {
         System.out.println("Введите индекс в массиве для его изменения");
