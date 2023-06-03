@@ -38,7 +38,7 @@ public class Main {
         System.out.println("Введите 0 или 1");
     }
     private static void udalit() {
-        System.out.println("Введите индекс в массиве для его удаления");
+        System.out.println("Введите индекс в для его удаления");
     }
     private static void izmenit() {
         System.out.println("Введите индекс в массиве для его изменения");
@@ -47,5 +47,6 @@ public class Main {
         System.out.println("Вид массива:");
         boolean[] array = new boolean[5];
         System.out.println(Arrays.toString(array));
+
     }
 }
