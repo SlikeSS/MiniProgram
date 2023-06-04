@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    static ArrayList<Boolean> arrayList = new ArrayList<Boolean>();
     static boolean repeat = true;
 
     public static void main(String[] args) {
@@ -38,13 +39,13 @@ public class Main {
         System.out.println("Введено неверное значение");
     }
 
-    public static void view() {
+    private static void view() {
         System.out.println("Вид массива:");
-        ArrayList<Boolean> arrayList = new ArrayList<Boolean>();
         System.out.println(arrayList);
-        System.out.println("Всего элементов:"+arrayList.size());}
+        System.out.println("Всего элементов:"+arrayList.size());
+    return;}
 
-    public static void add() {
+    private static void add() {
         System.out.println("Введите 0 или 1");
         Scanner a = new Scanner(System.in);
         int b = a.nextInt();
@@ -56,17 +57,22 @@ public class Main {
             System.out.println(arrayList);
         } else {
             System.out.println("Неверное значение");
+            while (repeat) {
+                add();
+                return;
+            }
         }
     }
-    public static void delete() {
+    private static void delete() {
         System.out.println("Введите индекс в массив для его удаления");
         Scanner a = new Scanner(System.in);
         int b = a.nextInt();
+
     }
-    public static void update() {
+    private static void update() {
         System.out.println("Введите индекс в массиве для его изменения");
     }
-    public static void exit()
+    private static void exit()
     {System.out.println("Выход из программы");
         System.exit(0);
 }
